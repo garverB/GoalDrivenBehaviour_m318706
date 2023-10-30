@@ -58,6 +58,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GPlanner.cs" />
     <Compile Include="Assets\GAction.cs" />
     <Compile Include="Assets\GAgent.cs" />
     <Compile Include="Assets\WorldStates.cs" />
