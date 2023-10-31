@@ -7,13 +7,13 @@ using Unity.VisualScripting;
 
 public class SubGoal
 {
-    public Dictionary<string, int> sgoals;
+    public Dictionary<string, int> sGoals;
     public bool remove;
 
     public SubGoal(string s, int i, bool r)
     {
-        sgoals = new Dictionary<string, int>();
-        sgoals.Add(s, i);
+        sGoals = new Dictionary<string, int>();
+        sGoals.Add(s, i);
         remove = r;
     }
 }
@@ -76,7 +76,7 @@ public class GAgent : MonoBehaviour
 
             foreach (KeyValuePair<SubGoal, int> sg in sortedGoals)
             {
-                actionQueue = planner.plan(actions, sg.Key.sgoals, beliefs);
+                actionQueue = planner.plan(actions, sg.Key.sGoals, beliefs);
                 if(actionQueue != null)
                 {
                     currentGoal = sg.Key;

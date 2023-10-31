@@ -38,7 +38,7 @@ public class GAgentVisualEditor : Editor
         foreach (KeyValuePair<SubGoal, int> g in agent.gameObject.GetComponent<GAgent>().goals)
         {
             GUILayout.Label("---: ");
-            foreach (KeyValuePair<string, int> sg in g.Key.sgoals)
+            foreach (KeyValuePair<string, int> sg in g.Key.sGoals)
                 GUILayout.Label("=====  " + sg.Key);
         }
         serializedObject.ApplyModifiedProperties();
