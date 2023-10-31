@@ -72,6 +72,7 @@
     <Compile Include="Assets\Nurse.cs" />
     <Compile Include="Assets\GOAP\GAction.cs" />
     <Compile Include="Assets\Register.cs" />
+    <Compile Include="Assets\GoToCubicle.cs" />
     <Compile Include="Assets\AgentVisualiser\GAgentVisual.cs" />
     <Compile Include="Assets\GoToWaitingRoom.cs" />
   </ItemGroup>
