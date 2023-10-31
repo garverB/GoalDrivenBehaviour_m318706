@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GOAP\GPlanner.cs" />
+    <Compile Include="Assets\Rest.cs" />
     <Compile Include="Assets\Patient.cs" />
     <Compile Include="Assets\UpdateWorld.cs" />
     <Compile Include="Assets\GOAP\GInventory.cs" />

@@ -14,13 +14,13 @@ public class Spawn : MonoBehaviour
         //{
         //    Instantiate(patientPrefab, this.transform.position, Quaternion.identity);
         //}
-        Invoke("SpawnPatient", 8);
+        Invoke("SpawnPatient", 5);
     }
 
     void SpawnPatient()
     {
         Instantiate(patientPrefab, this.transform.position, Quaternion.identity);
-        Invoke("SpawnPatient", Random.Range(7,10));
+        Invoke("SpawnPatient", Random.Range(5,10));
     }
 
     // Update is called once per frame
