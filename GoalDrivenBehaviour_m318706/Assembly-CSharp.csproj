@@ -63,6 +63,7 @@
     <Compile Include="Assets\GoToHospital.cs" />
     <Compile Include="Assets\GOAP\GWorld.cs" />
     <Compile Include="Assets\GOAP\WorldStates.cs" />
+    <Compile Include="Assets\Spawn.cs" />
     <Compile Include="Assets\GOAP\GAgent.cs" />
     <Compile Include="Assets\GOAP\GAction.cs" />
     <Compile Include="Assets\Register.cs" />

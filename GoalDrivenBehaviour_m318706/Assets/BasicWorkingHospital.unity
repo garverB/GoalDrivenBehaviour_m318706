@@ -1394,8 +1394,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26970398, y: -0.65543294, z: 0.2714892, w: 0.65112305}
-  m_LocalPosition: {x: 4, y: 15.2, z: -18.77}
+  m_LocalRotation: {x: 0.2995068, y: -0.64277965, z: 0.30221573, w: 0.63702095}
+  m_LocalPosition: {x: 13.129417, y: 35.63831, z: -18.675186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4019,6 +4019,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 742992260}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1945545255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945545257}
+  - component: {fileID: 1945545256}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1945545256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945545255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e3147cd442fbf42a6a691a573dc14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patientPrefab: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+  numPatients: 5
+--- !u!4 &1945545257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945545255}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.3, y: 7, z: -64.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1969196521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4071,140 +4117,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patient
       objectReference: {fileID: 0}
+    - target: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969196523}
-    - targetCorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969196525}
-    - targetCorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969196524}
-    - targetCorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969196528}
-    - targetCorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969196526}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
---- !u!1 &1969196522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-  m_PrefabInstance: {fileID: 1969196521}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &1969196523
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969196522}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1969196524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969196522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa0c608754341b242bbe2004257e8a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: GoToHospital
-  cost: 1
-  target: {fileID: 0}
-  targetTag: Door
-  duration: 2
-  preConditions: []
-  afterEffects:
-  - key: hasArrived
-    value: 0
-  agent: {fileID: 0}
-  running: 0
---- !u!114 &1969196525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969196522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68b2089b4b2149a449be0c707225431b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions: []
-  currentAction: {fileID: 0}
---- !u!114 &1969196526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969196522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b926be0bcfd4b048912f38521b16840, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: GoToWaitingRoom
-  cost: 1
-  target: {fileID: 0}
-  targetTag: WaitingArea
-  duration: 0
-  preConditions:
-  - key: hasRegistered
-    value: 0
-  afterEffects:
-  - key: isWaiting
-    value: 0
-  agent: {fileID: 0}
-  running: 0
---- !u!114 &1969196528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969196522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64271547cd70a6348808ec20028dacf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: Register
-  cost: 1
-  target: {fileID: 0}
-  targetTag: Reception
-  duration: 5
-  preConditions:
-  - key: hasArrived
-    value: 0
-  afterEffects:
-  - key: hasRegistered
-    value: 0
-  agent: {fileID: 0}
-  running: 0
 --- !u!1 &1999376859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,3 +4859,4 @@ SceneRoots:
   - {fileID: 742992260}
   - {fileID: 1969196521}
   - {fileID: 2037449206}
+  - {fileID: 1945545257}
