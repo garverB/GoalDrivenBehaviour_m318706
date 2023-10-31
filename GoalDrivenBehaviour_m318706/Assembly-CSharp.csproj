@@ -61,6 +61,7 @@
     <Compile Include="Assets\GOAP\GPlanner.cs" />
     <Compile Include="Assets\Patient.cs" />
     <Compile Include="Assets\UpdateWorld.cs" />
+    <Compile Include="Assets\GOAP\GInventory.cs" />
     <Compile Include="Assets\GoToHospital.cs" />
     <Compile Include="Assets\GOAP\GWorld.cs" />
     <Compile Include="Assets\GOAP\WorldStates.cs" />
